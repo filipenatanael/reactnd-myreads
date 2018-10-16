@@ -1,5 +1,5 @@
 import React from 'react'
-import Loading from './Loading'
+import Loading from './utils/Loading'
 import Book from './Book'
 
 const Categories = (props) =>  {

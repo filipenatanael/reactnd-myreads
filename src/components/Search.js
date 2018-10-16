@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { DebounceInput } from 'react-debounce-input'
 import * as BooksAPI from '../services/BooksAPI'
-import Loading from './Loading'
+import Loading from './utils/Loading'
 import Book from './Book'
 
 class Search extends Component {
