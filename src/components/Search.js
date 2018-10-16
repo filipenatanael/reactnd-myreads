@@ -38,7 +38,6 @@ class Search extends Component {
       }))
     })
   }
-
   mergeSearchResultWithBooks = (searchResults, props) => {
     return searchResults.map(response => {
       const book = this.props.books.find(book => response.id === book.id);
@@ -46,7 +45,6 @@ class Search extends Component {
       return response;
     })
   }
-
   render() {
     const { searchedBooks, isLoading } = this.state
     return (

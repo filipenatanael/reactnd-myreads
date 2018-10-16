@@ -19,15 +19,15 @@ class App extends Component {
 
   notify = (message) => toast.info(message);
 
-  onChangeCategory(book, shelf, message){
-    if (!shelf) return;
-    BooksAPI.update(book, shelf).then(() => {
-      this.setState(currentState => ({
+  onChangeCategory(book, category, message){
+    if (!category) return;
+    BooksAPI.update(book, category).then(() => {
+      this.setState(prevState => ({
         books: [
-          ...currentState.books.filter(sb => sb.id !== book.id),
+          ...prevState.books.filter(pBook => pBook.id !== book.id),
           {
             ...book,
-            shelf
+            shelf: category
           }
         ]
       }));
@@ -45,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <ToastContainer autoClose={3000}/>
+        <ToastContainer autoClose={2000}/>
         <Switch>
           <Route exact path='/' render={() => (
             <BookShelves
