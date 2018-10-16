@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import Loading from './Loading'
 import Book from './Book'
 
@@ -11,23 +11,22 @@ const Categories = (props) =>  {
       >
       {props.displayName}
       </h2>
-
       <div className="bookshelf-books">
         <ol className="books-grid">
           {props.isLoading && (
-            <Loading />
+            <Loading message={`BookShelves is loading.`} />
           )}
 
           {!props.isLoading && props.books.length !== 0 ? (
             props.books.map(book => {
               return (
                 <li key={book.id}>
-                  <Book book={book} />
+                  <Book book={book} onChangeCategory={props.onChangeCategory}/>
                 </li>
               );
             })
           ) : (
-            <li className="message">`There are no books in this bookshelves.`</li>
+            <li className="message">There are no books in this bookshelves.</li>
           )}
         </ol>
       </div>

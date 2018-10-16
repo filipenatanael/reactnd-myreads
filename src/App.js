@@ -17,7 +17,7 @@ class App extends Component {
     this.onChangeCategory = this.onChangeCategory.bind(this)
   }
 
-  notify = (message) => toast(message);
+  notify = (message) => toast.info(message);
 
   onChangeCategory(book, shelf, message){
     if (!shelf) return;

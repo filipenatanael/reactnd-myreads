@@ -1,7 +1,8 @@
-import React from "react"
-import NoCoverAvailable from "../icons/no-cover-available.png"
+import React from 'react'
+import ChangeCategory from './ChangeCategory'
+import NoCoverAvailable from '../icons/no-cover-available.png'
 
-const Book = ({ book }) => {
+const Book = ({ book, onChangeCategory }) => {
   return (
     <div className="book">
       <div className="book-top">
@@ -15,6 +16,7 @@ const Book = ({ book }) => {
               : NoCoverAvailable}")`
           }}
         />
+        <ChangeCategory onChangeCategory={onChangeCategory} book={book} />
       </div>
 
       <a className="book-title" target="_blank" href={book.previewLink}>
