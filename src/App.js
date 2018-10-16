@@ -1,9 +1,8 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import * as BooksAPI from './services/BooksAPI'
-import './App.css'
-
 import BookShelves from './components/BookShelves'
+import './App.css'
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -12,6 +11,37 @@ class App extends React.PureComponent {
       books: [],
       loading: true
     }
+    this.onChangeCategory = this.onChangeCategory.bind(this)
+  }
+  onChangeCategory(book, category, message) {
+    if (!category) return;
+    BooksAPI.update(book, category).then(() => {
+      this.setState(prevState => ({
+        books: [
+          ...prevState.books.filter(pBook => pBook.id !== book.id),
+          {
+            ...book,
+            category
+          }
+        ]
+      })).bind(this)
+      console.log(message);
+    })
+  }
+  onChangeCategory(book, shelf, message){
+    if (!shelf) return;
+    BooksAPI.update(book, shelf).then(() => {
+      this.setState(currentState => ({
+        books: [
+          ...currentState.books.filter(sb => sb.id !== book.id),
+          {
+            ...book,
+            shelf
+          }
+        ]
+      }));
+      alert(message);
+    });
   }
   componentDidMount() {
     BooksAPI.getAll().then(books => {
@@ -19,9 +49,9 @@ class App extends React.PureComponent {
         books,
         loading: false
       }));
-      console.log(books);
     })
   }
+  
   render() {
     return (
       <div className="app">
@@ -30,6 +60,7 @@ class App extends React.PureComponent {
             <BookShelves
               books={this.state.books}
               isLoading={this.state.loading}
+              onChangeCategory={this.onChangeCategory}
             />
           )} />
         </Switch>
