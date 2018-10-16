@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import * as BooksAPI from './services/BooksAPI'
 import BookShelves from './components/BookShelves'
+import Search from './components/Search'
 import './App.css'
 
-class App extends React.PureComponent {
+class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -51,7 +52,6 @@ class App extends React.PureComponent {
       }));
     })
   }
-  
   render() {
     return (
       <div className="app">
@@ -63,6 +63,14 @@ class App extends React.PureComponent {
               onChangeCategory={this.onChangeCategory}
             />
           )} />
+
+          <Route path='/search' render={() => (
+            <Search
+              books={this.state.books}
+              onChangeCategory={this.onChangeCategory}
+            />
+          )} />
+
         </Switch>
       </div>
     )
