@@ -27,7 +27,7 @@ class App extends Component {
           ...prevState.books.filter(pBook => pBook.id !== book.id),
           {
             ...book,
-            category
+            shelf: category
           }
         ]
       }));
@@ -45,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <ToastContainer autoClose={3000}/>
+        <ToastContainer autoClose={2000}/>
         <Switch>
           <Route exact path='/' render={() => (
             <BookShelves
