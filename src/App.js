@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import * as BooksAPI from './services/BooksAPI'
 import BookShelves from './components/BookShelves'
 import Search from './components/Search'
@@ -14,21 +16,9 @@ class App extends Component {
     }
     this.onChangeCategory = this.onChangeCategory.bind(this)
   }
-  onChangeCategory(book, category, message) {
-    if (!category) return;
-    BooksAPI.update(book, category).then(() => {
-      this.setState(prevState => ({
-        books: [
-          ...prevState.books.filter(pBook => pBook.id !== book.id),
-          {
-            ...book,
-            category
-          }
-        ]
-      })).bind(this)
-      console.log(message);
-    })
-  }
+
+  notify = (message) => toast(message);
+
   onChangeCategory(book, shelf, message){
     if (!shelf) return;
     BooksAPI.update(book, shelf).then(() => {
@@ -41,7 +31,7 @@ class App extends Component {
           }
         ]
       }));
-      alert(message);
+      this.notify(message)
     });
   }
   componentDidMount() {
@@ -55,6 +45,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <ToastContainer autoClose={3000}/>
         <Switch>
           <Route exact path='/' render={() => (
             <BookShelves

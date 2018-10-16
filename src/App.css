@@ -130,6 +130,10 @@ body, .app {
 .book-title {
   margin-top: 10px;
 }
+a.book-title {
+    color: white;
+    text-decoration: none;
+}
 .book-authors {
   color: #999;
 }
