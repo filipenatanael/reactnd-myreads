@@ -1,21 +1,5 @@
 import React from 'react';
-
-const CATEGORIES = [
-  {
-    name: 'currentlyReading',
-    displayName: 'Currently Reading'
-  },
-  {
-    name: 'wantToRead',
-    displayName: 'Want to Read'
-  },
-  {
-    name: 'read',
-    displayName: 'Read'
-  }
-]
-
-const MESSAGE = 'Book moved with success.';
+import { CATEGORIES, MESSAGE } from './utils/Constants'
 
 const ChangeCategory = (props, book, onChangeCategory) => {
   return (

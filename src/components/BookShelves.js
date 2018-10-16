@@ -1,24 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-
-import Loading from './Loading'
+import Loading from './utils/Loading'
 import Categories from './Categories'
-
-const CATEGORIES = [
-  {
-    name: 'currentlyReading',
-    displayName: 'Currently Reading'
-  },
-  {
-    name: 'wantToRead',
-    displayName: 'Want to Read'
-  },
-  {
-    name: 'read',
-    displayName: 'Read'
-  }
-]
+import { CATEGORIES } from './utils/Constants'
 
 class BookShelves extends React.PureComponent {
   static propTypes = {
