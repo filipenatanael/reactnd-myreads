@@ -34,13 +34,9 @@ class App extends Component {
       this.notify(message)
     });
   }
-  componentDidMount() {
-    BooksAPI.getAll().then(books => {
-      this.setState(() => ({
-        books,
-        loading: false
-      }));
-    })
+  async componentDidMount() {
+    const books = await BooksAPI.getAll()
+    this.setState({ books, loading: false })
   }
   render() {
     return (
