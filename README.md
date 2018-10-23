@@ -6,7 +6,7 @@ This project was built for the **Udacity React Nanodegree Program**. A bookshelf
 ![](https://raw.githubusercontent.com/filipenatanael/images-in-readme/master/MyReads/MyReads.gif)
 
 ### How to Run
-- Run **git clone git@github.com:filipenatanael/reactnd-myreads.git*
+- Run **git clone git@github.com:filipenatanael/reactnd-myreads.git**
 - Run **npm install** to install the project dependencies.
 - Run the app using **npm start**.
 
