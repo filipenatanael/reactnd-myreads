@@ -13,19 +13,13 @@ class Search extends Component {
       isLoading: false,
       searchedBooks: []
     };
-    this.updateQuery = this.updateQuery.bind(this)
-    this.mergeSearchResultWithBooks = this.mergeSearchResultWithBooks.bind(this)
+    // this.updateQuery = this.updateQuery.bind(this)
+    // this.mergeSearchResultWithBooks = this.mergeSearchResultWithBooks.bind(this)
   }
   updateQuery = (query) => {
-    this.setState(() => ({
-      query,
-      isLoading: true
-    }));
+    this.setState(() => ({ query, isLoading: true }));
     if (!query) {
-      this.setState(() => ({
-        searchedBooks: [],
-        isLoading: false
-      }));
+      this.setState(() => ({ searchedBooks: [], isLoading: false }))
       return;
     }
     BooksAPI.search(query).then(books => {
