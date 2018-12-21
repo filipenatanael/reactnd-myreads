@@ -1,3 +1,5 @@
 language: node_js
 node_js:
  - "node"
+env:
+ - CODECOV_TOKEN="0bec7e56-2d60-4d22-a703-e366b301f69e"
