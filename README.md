@@ -7,11 +7,14 @@
   <a href="https://discordapp.com/invite/reactiflux"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg" alt="Chat"></a>
 </p>
 
-<h2 align="center"> MyReads Project</h2>
+<h1 align="center">MyReads Project</h1>
 
-<hr>
+<p align="center">
+This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that it should be persisted information as user’s interacts with the application.
+  </p>
+<br>
 
-This project was built for the **Udacity React Nanodegree Program**. A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that it should be persisted information as user’s interacts with the application.
+## Demonstration
 
 ![](https://raw.githubusercontent.com/filipenatanael/images-in-readme/master/MyReads/MyReads.gif)
 
