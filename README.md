@@ -1,4 +1,15 @@
-# MyReads Project
+<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://image.flaticon.com/icons/png/512/201/201614.png" alt="My Reads"></a></p>
+
+<p align="center">
+  <a href="https://travis-ci.org/filipenatanael/reactnd-myreads"><img src="https://travis-ci.org/filipenatanael/reactnd-myreads.svg?branch=master" alt="Build Status"></a>
+  <a href="###"><img src="https://img.shields.io/codecov/c/github/vuejs/vue/dev.svg" alt="Coverage Status"></a>
+  <a href="https://github.com/filipenatanael/reactnd-myreads"><img src="https://img.shields.io/npm/l/vue.svg" alt="License"></a>
+  <a href="https://discordapp.com/invite/reactiflux"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg" alt="Chat"></a>
+</p>
+
+<h2 align="center"> MyReads Project</h2>
+
+<hr>
 
 This project was built for the **Udacity React Nanodegree Program**. A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that it should be persisted information as user’s interacts with the application.
 
