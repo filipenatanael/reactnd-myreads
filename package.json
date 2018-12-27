@@ -7,13 +7,9 @@
     "email": "filipenatanaeldemorais@gmail.com",
     "url": "https://filipenatanael.github.io"
   },
-  {
-  "bugs": "https://github.com/filipenatanael/reactnd-myreads/issues"
-  },
-  {
-    "homepage": "https://my-reads-udacity-nanodegree.herokuapp.com/"
-  },
-  "license": "MIT,
+  "bugs": "https://github.com/filipenatanael/reactnd-myreads/issues/",
+  "homepage": "https://my-reads-udacity-nanodegree.herokuapp.com/",
+  "license": "MIT",
   "keywords": [
   "Udacity",
   "MyReads",
