@@ -2,6 +2,24 @@
   "name": "reactnd-myreads",
   "version": "1.1.2",
   "description": "MyReads Udacity Nanodegree Project.",
+  "author": {
+    "name": "Filipe Natanael",
+    "email": "filipenatanaeldemorais@gmail.com",
+    "url": "https://filipenatanael.github.io"
+  },
+  "bugs": "https://github.com/filipenatanael/reactnd-myreads/issues/",
+  "homepage": "https://my-reads-udacity-nanodegree.herokuapp.com/",
+  "license": "MIT",
+  "keywords": [
+  "Udacity",
+  "MyReads",
+  "Nanodegree",
+  "React"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filipenatanael/reactnd-myreads.git"
+  },
   "dependencies": {
     "mocha": "^2.5.3",
     "prop-types": "^15.6.2",
