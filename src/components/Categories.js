@@ -9,7 +9,7 @@ const Categories = (props) =>  {
         className="bookshelf-title"
         style={h2StyleTitle}
       >
-      {props.displayName}
+      {props.displayName.toUpperCase()}
       </h2>
       <div className="bookshelf-books">
         <ol className="books-grid">
@@ -37,6 +37,5 @@ const Categories = (props) =>  {
 export default Categories
 
 const h2StyleTitle = {
-  width: '100%',
-  textAlign: 'center'
+  width: '100%'
 }
