@@ -11,10 +11,10 @@
   "homepage": "https://my-reads-udacity-nanodegree.herokuapp.com/",
   "license": "MIT",
   "keywords": [
-  "Udacity",
-  "MyReads",
-  "Nanodegree",
-  "React"
+    "Udacity",
+    "MyReads",
+    "Nanodegree",
+    "React"
   ],
   "repository": {
     "type": "git",
