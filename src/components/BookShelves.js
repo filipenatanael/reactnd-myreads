@@ -8,6 +8,7 @@ import { CATEGORIES } from './utils/Constants'
 
 const MENUS = [
   {  path: '/about', name: 'About' },
+  {  path: '/contact', name: 'Contact' }
 ];
 
 class BookShelves extends React.PureComponent {
