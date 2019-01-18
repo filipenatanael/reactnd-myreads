@@ -6,6 +6,10 @@ import Categories from './Categories'
 import ImageLogo from '../icons/app-logo.png'
 import { CATEGORIES } from './utils/Constants'
 
+const MENUS = [
+  {  path: '/about', name: 'About' },
+];
+
 class BookShelves extends React.PureComponent {
   static propTypes = {
     books: PropTypes.array.isRequired,
@@ -23,6 +27,15 @@ class BookShelves extends React.PureComponent {
             <img src={ImageLogo} alt="MyReads Logo" height="42" width="42" />
             <div className="navigation-bar-title">MyReads</div>
           </div>
+          <nav>
+            <ul class="menu">
+              { MENUS.map(item => {
+                return (
+                  <li><a href={item.path}>{item.name}</a></li>
+                );
+              })}
+          </ul>
+          </nav>
         </div>
 
         <div className="list-books-content">
