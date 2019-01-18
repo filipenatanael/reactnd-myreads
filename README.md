@@ -21,12 +21,14 @@ This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A
 
 ## Demonstration
 
-![](https://raw.githubusercontent.com/filipenatanael/images-in-readme/master/MyReads/MyReads.gif)
+![](https://raw.githubusercontent.com/filipenatanael/images-in-readme/master/MyReads/my-read-demo.gif)
 
-## How to Run
-- Run **git clone git@github.com:filipenatanael/reactnd-myreads.git**
-- Run **npm install** to install the project dependencies.
-- Run the app using **npm start**.
+## Running
+```shell
+  git clone git@github.com:filipenatanael/reactnd-myreads.git
+  npm install
+  npm start
+```
 
 ## Architecture
 
@@ -35,7 +37,7 @@ This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A
 alt="Architecture Diagram"/>
 </p>
 
-## Backend API
+## Application Programming Interface
 
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the only terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
