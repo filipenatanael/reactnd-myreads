@@ -29,6 +29,13 @@ If you do not know the [Storybook](https://github.com/storybooks/storybook), is 
   /* Check out storybook */
   npm run storybook
 ```
+## Architecture
+This application was built looking for the best abstraction possible of the functionalities, in order to facilitate the understanding and future maintenance.
+
+<p align="center">
+<img src="https://i.ibb.co/hsBjhGd/myreads-Printscreen.png"
+alt="Architecture Diagram"/>
+</p>
 
 ## Stack Testing
 - *Enzyme*
@@ -38,14 +45,6 @@ If you do not know the [Storybook](https://github.com/storybooks/storybook), is 
 - *Sinon*
   
 ![](https://i.ibb.co/gdcpRdk/test-My-Reads.png)
-
-## Architecture
-This application was built looking for the best abstraction possible of the functionalities, in order to facilitate the understanding and future maintenance.
-
-<p align="center">
-<img src="https://i.ibb.co/hsBjhGd/myreads-Printscreen.png"
-alt="Architecture Diagram"/>
-</p>
 
 ## Search Terms
 
