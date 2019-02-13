@@ -70,7 +70,7 @@
     "deploy-storybook": "storybook-to-ghpages",
     "test": "./node_modules/.bin/mocha --require tests/helpers/config.js tests/specs/**/*.spec.js",
     "test:tdd": "./node_modules/.bin/mocha --require tests/helpers/config.js tests/specs/**/*.spec.js -w",
-    "test:coverage": "./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/mocha tests/helpers/setup.js tests/specs/**/*.spec.js",
+    "test:coverage": "./node_modules/.bin/nyc --reporter=html --reporter=text ./node_modules/.bin/mocha tests/helpers/config.js tests/specs/**/*.spec.js",
     "lint": "./node_modules/.bin/eslint src",
     "lint:fix": "./node_modules/.bin/eslint src --fix"
   }

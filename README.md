@@ -18,12 +18,19 @@ This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A
 
 ![](https://raw.githubusercontent.com/filipenatanael/images-in-readme/master/MyReads/my-read-demo.gif)
 
-## Running
+## Running & StoryBook
 ```shell
   git clone git@github.com:filipenatanael/reactnd-myreads.git
+  cd reactnd-myreads
   npm install
   npm start
+
+  /* Check out storybook */
+  npm run storybook
 ```
+
+## Running Tests
+![](https://i.ibb.co/gdcpRdk/test-My-Reads.png)
 
 ## Architecture
 
