@@ -16,7 +16,7 @@ This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A
 
 ## Demonstration
 
-![](https://i.ibb.co/hsBjhGd/myreads-Printscreen.png)
+![](https://raw.githubusercontent.com/filipenatanael/images-in-readme/master/MyReads/my-read-demo.gif)
 
 ## Running
 ```shell
@@ -28,7 +28,7 @@ This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A
 ## Architecture
 
 <p align="center">
-<img src="https://github.com/filipenatanael/images-in-readme/blob/master/MyReads/diagram.PNG"
+<img src="https://i.ibb.co/hsBjhGd/myreads-Printscreen.png"
 alt="Architecture Diagram"/>
 </p>
 
@@ -36,6 +36,6 @@ alt="Architecture Diagram"/>
 
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the only terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
-
+## About Me
 | [<img src="https://avatars3.githubusercontent.com/u/14134758?s=115&v=3"><br><sub>@filipenatanael</sub>](https://github.com/filipenatanael) |
 | :---: |
