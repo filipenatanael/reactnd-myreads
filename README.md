@@ -12,13 +12,14 @@
 <p align="center">
 This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that it should be persisted information as user’s interacts with the application.
   </p>
-<br>
-
-## Demonstration
+<hr />
 
 ![](https://raw.githubusercontent.com/filipenatanael/images-in-readme/master/MyReads/my-read-demo.gif)
 
 ## Running & StoryBook
+
+If you do not know the [Storybook](https://github.com/storybooks/storybook), is a development environment for UI components. It allows you to browse a component library, view the different states of each component, and interactively develop and test components.
+
 ```shell
   git clone git@github.com:filipenatanael/reactnd-myreads.git
   cd reactnd-myreads
@@ -29,10 +30,17 @@ This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A
   npm run storybook
 ```
 
-## Running Tests
+## Stack Testing
+- *Enzyme*
+- *Adapter React 16*
+- *Chai*
+- *JSDom*
+- *Sinon*
+  
 ![](https://i.ibb.co/gdcpRdk/test-My-Reads.png)
 
 ## Architecture
+This application was built looking for the best abstraction possible of the functionalities, in order to facilitate the understanding and future maintenance.
 
 <p align="center">
 <img src="https://i.ibb.co/hsBjhGd/myreads-Printscreen.png"
