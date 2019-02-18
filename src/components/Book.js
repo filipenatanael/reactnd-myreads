@@ -16,7 +16,13 @@ const Book = ({ book, onChangeCategory }) => {
               : NoCoverAvailable}")`
           }}
         />
-        <ChangeCategory onChangeCategory={onChangeCategory} book={book} />
+
+        {
+          onChangeCategory
+          ? <ChangeCategory onChangeCategory={onChangeCategory} book={book} />
+          : ''
+        }
+
       </div>
 
       <a className="book-title" target="_blank" href={book.previewLink}>
