@@ -3,6 +3,13 @@ var Adapter = require('enzyme-adapter-react-16');
 
 require('babel-register')();
 
+/* Crashing with "unexpected character" on importing a png as*/
+require.extensions['.jpg'] = () => {};
+require.extensions['.jpeg'] = () => {};
+require.extensions['.gif'] = () => {};
+require.extensions['.png'] = () => {};
+require.extensions['.svg'] = () => {};
+
 var jsdom = require('jsdom').jsdom;
 
 var exposedProperties = ['window', 'navigator', 'document'];

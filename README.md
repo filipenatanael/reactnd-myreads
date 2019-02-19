@@ -11,6 +11,9 @@
 
 <p align="center">
 This project was built for the <b><i>Udacity React Nanodegree Program</i></b>. A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that it should be persisted information as user’s interacts with the application.
+
+<h5>Stack Project</h5>
+<i>React, Node.js, HTML, CSS3, Storybook, Unit Testing, Enzime, Chai,JSDom, Sinon, Continuous Integration</i>
   </p>
 <hr />
 
@@ -36,15 +39,6 @@ This application was built looking for the best abstraction possible of the func
 <img src="https://i.ibb.co/hsBjhGd/myreads-Printscreen.png"
 alt="Architecture Diagram"/>
 </p>
-
-## Stack Testing
-- *Enzyme*
-- *Adapter React 16*
-- *Chai*
-- *JSDom*
-- *Sinon*
-  
-![](https://i.ibb.co/gdcpRdk/test-My-Reads.png)
 
 ## Search Terms
 

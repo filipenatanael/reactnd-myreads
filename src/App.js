@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import * as BooksAPI from './services/BooksAPI'
 import BookShelves from './components/BookShelves'
 import Search from './components/Search'
+import About from './components/About'
 import './App.css'
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
     this.onChangeCategory = this.onChangeCategory.bind(this)
   }
 
-  notify = (message) => toast.info(message);
+  notify = (message) => toast.info(message, { position: toast.POSITION.BOTTOM_RIGHT });
 
   onChangeCategory(book, category, message){
     if (!category) return;
@@ -57,6 +58,8 @@ class App extends Component {
               onChangeCategory={this.onChangeCategory}
             />
           )} />
+
+          <Route exact path='/about' component={About} />
 
         </Switch>
       </div>
